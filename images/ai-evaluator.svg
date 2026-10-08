@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#170d04"/><stop offset="1" stop-color="#2e1a08"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#fff" stroke-opacity=".05"/>
+    </pattern>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#f59e0b" stop-opacity=".4"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbbf24" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#fbbf24" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#fbbf24" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="arc" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f59e0b"/><stop offset="1" stop-color="#fde68a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+  <circle cx="560" cy="230" r="230" fill="url(#glow)"/>
+
+  <!-- document being scanned -->
+  <rect x="90" y="70" width="230" height="300" rx="14" fill="#fff" fill-opacity=".06" stroke="#fff" stroke-opacity=".15"/>
+  <rect x="112" y="94" width="110" height="10" rx="5" fill="#fbbf24" fill-opacity=".75"/>
+  <g fill="#fff" fill-opacity=".3">
+    <rect x="112" y="126" width="186" height="6" rx="3"/>
+    <rect x="112" y="146" width="160" height="6" rx="3"/>
+    <rect x="112" y="166" width="180" height="6" rx="3"/>
+    <rect x="112" y="186" width="120" height="6" rx="3"/>
+    <rect x="112" y="226" width="186" height="6" rx="3"/>
+    <rect x="112" y="246" width="150" height="6" rx="3"/>
+    <rect x="112" y="266" width="170" height="6" rx="3"/>
+    <rect x="112" y="286" width="186" height="6" rx="3"/>
+    <rect x="112" y="306" width="140" height="6" rx="3"/>
+    <rect x="112" y="326" width="100" height="6" rx="3"/>
+  </g>
+  <rect x="112" y="206" width="186" height="6" rx="3" fill="#fde68a"/>
+  <rect x="76" y="184" width="258" height="50" fill="url(#beam)"/>
+  <path d="M76 209 H334" stroke="#fbbf24" stroke-width="2"/>
+  <g fill="none" stroke="#fbbf24" stroke-width="3" stroke-linecap="round">
+    <path d="M74 84 V58 H100"/><path d="M336 84 V58 H310"/>
+    <path d="M74 356 V382 H100"/><path d="M336 356 V382 H310"/>
+  </g>
+
+  <!-- score gauge -->
+  <path d="M450 220 A110 110 0 0 1 670 220" fill="none" stroke="#fff" stroke-opacity=".1" stroke-width="18" stroke-linecap="round"/>
+  <path d="M450 220 A110 110 0 0 1 659.5 173.2" fill="none" stroke="url(#arc)" stroke-width="18" stroke-linecap="round"/>
+  <text x="560" y="206" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="52" font-weight="600" fill="#fff">8.6</text>
+  <text x="560" y="238" text-anchor="middle" font-family="ui-monospace, Consolas, monospace" font-size="11" letter-spacing="2" fill="#fde68a" fill-opacity=".7">AI SCORE / 10</text>
+
+  <!-- criteria -->
+  <g>
+    <circle cx="468" cy="290" r="10" fill="#f59e0b" fill-opacity=".2" stroke="#f59e0b"/>
+    <path d="M463 290 l3.5 3.5 l7 -7" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="488" y="287" width="110" height="7" rx="3.5" fill="#fff" fill-opacity=".4"/>
+    <rect x="614" y="288" width="100" height="6" rx="3" fill="#fff" fill-opacity=".1"/>
+    <rect x="614" y="288" width="85" height="6" rx="3" fill="#fbbf24"/>
+
+    <circle cx="468" cy="324" r="10" fill="#f59e0b" fill-opacity=".2" stroke="#f59e0b"/>
+    <path d="M463 324 l3.5 3.5 l7 -7" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="488" y="321" width="90" height="7" rx="3.5" fill="#fff" fill-opacity=".4"/>
+    <rect x="614" y="322" width="100" height="6" rx="3" fill="#fff" fill-opacity=".1"/>
+    <rect x="614" y="322" width="70" height="6" rx="3" fill="#fbbf24"/>
+
+    <circle cx="468" cy="358" r="10" fill="#f59e0b" fill-opacity=".2" stroke="#f59e0b"/>
+    <path d="M463 358 l3.5 3.5 l7 -7" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="488" y="355" width="120" height="7" rx="3.5" fill="#fff" fill-opacity=".4"/>
+    <rect x="614" y="356" width="100" height="6" rx="3" fill="#fff" fill-opacity=".1"/>
+    <rect x="614" y="356" width="92" height="6" rx="3" fill="#fbbf24"/>
+  </g>
+
+  <text x="400" y="452" text-anchor="middle" font-family="ui-monospace, Consolas, monospace" font-size="12" letter-spacing="1.5" fill="#fde68a" fill-opacity=".55">PDF → OCR → RAG PROMPT → SCORE</text>
+</svg>

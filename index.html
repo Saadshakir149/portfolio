@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saad Shakir — Full Stack &amp; AI/LLM Engineer</title>
+  <meta name="description" content="Saad Shakir is a full-stack developer and AI/LLM engineer building intelligent, real-time web applications with React, Node.js, Python and LLMs." />
+  <meta name="theme-color" content="#09090b" />
+  <meta property="og:title" content="Saad Shakir — Full Stack &amp; AI/LLM Engineer" />
+  <meta property="og:description" content="Full-stack developer building intelligent, real-time web applications." />
+  <meta property="og:image" content="photo.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo" aria-label="Home">
+        <img class="nav__avatar" src="photo.jpg" alt="" />
+        <span class="nav__name">Saad Shakir</span>
+      </a>
+      <nav class="nav__links" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+      </nav>
+      <a href="#contact" class="btn btn--dark btn--sm nav__cta">Let's talk</a>
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <a href="#contact" class="badge">
+          <span class="badge__dot"></span>
+          Open to full-stack &amp; AI engineering roles
+          <span class="badge__arrow">→</span>
+        </a>
+
+        <h1 class="hero__title">
+          Full-stack developer building <em>intelligent</em>, real-time products.
+        </h1>
+
+        <p class="hero__lead">
+          I'm Saad Shakir, a full-stack developer and AI/LLM engineer. I build web apps with React, Node.js
+          and Python, and add LLMs, retrieval and real-time voice to them.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#work" class="btn btn--dark">View my work <span aria-hidden="true">→</span></a>
+          <a href="Saad_Shakir_CV.pdf" class="btn btn--light" target="_blank" rel="noopener">Download CV</a>
+        </div>
+
+        <dl class="stats">
+          <div class="stat"><dt>Professional experience</dt><dd>1+ yr</dd></div>
+          <div class="stat"><dt>Projects built</dt><dd>10+</dd></div>
+          <div class="stat"><dt>Certifications</dt><dd>3</dd></div>
+          <div class="stat"><dt>Remote, EU &amp; US-East overlap</dt><dd>UTC+5</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ TECH MARQUEE ============ -->
+    <div class="marquee" aria-label="Technologies I work with">
+      <div class="marquee__track">
+        <ul class="marquee__list">
+          <li>React.js</li><li>Next.js</li><li>Node.js</li><li>Express</li><li>Python</li><li>Flask</li>
+          <li>OpenAI API</li><li>Groq</li><li>LangChain</li><li>Socket.IO</li><li>PostgreSQL</li><li>Supabase</li><li>Vercel</li>
+        </ul>
+        <ul class="marquee__list" aria-hidden="true">
+          <li>React.js</li><li>Next.js</li><li>Node.js</li><li>Express</li><li>Python</li><li>Flask</li>
+          <li>OpenAI API</li><li>Groq</li><li>LangChain</li><li>Socket.IO</li><li>PostgreSQL</li><li>Supabase</li><li>Vercel</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT (BENTO) ============ -->
+    <section id="about" class="section container">
+      <div class="section__head reveal">
+        <p class="eyebrow">About</p>
+        <h2 class="section__title">An engineer at the intersection of <em>web</em> and <em>AI</em>.</h2>
+      </div>
+
+      <div class="bento">
+        <article class="card bento__intro reveal">
+          <img class="portrait" src="photo.jpg" alt="Portrait of Saad Shakir" />
+          <div class="bento__intro-text">
+            <h3 class="card__title">Hi, I'm Saad.</h3>
+            <p class="card__text">
+              I'm a Computer Science graduate who builds full-stack web applications, AI-powered tools and
+              real-time communication systems. Most recently I was a Research Assistant at <strong>LUMS</strong>,
+              building LLM-powered systems and speech pipelines. Before that I was a Node.js Developer at
+              <strong>SharkStack</strong>, shipping REST APIs and React integrations.
+            </p>
+            <p class="card__text">
+              I like the whole path from idea to deployment: designing APIs, wiring up LLMs with good prompts and
+              retrieval, hunting down hard bugs, and testing thoroughly so things work the way they should.
+            </p>
+          </div>
+        </article>
+
+        <article class="card bento__location reveal">
+          <p class="card__label">Based in</p>
+          <h3 class="card__big">Multan, Pakistan</h3>
+          <p class="card__text mono"><span id="local-time" data-tz="Asia/Karachi">--:--</span> local time · PKT</p>
+          <div class="globe" aria-hidden="true"></div>
+        </article>
+
+        <article class="card bento__focus reveal">
+          <p class="card__label">Currently</p>
+          <h3 class="card__title">Building LLM apps with RAG, voice interfaces and real-time collaboration.</h3>
+        </article>
+
+        <article class="card bento__stack reveal">
+          <div class="stack-group">
+            <p class="card__label">Frontend</p>
+            <ul class="chips"><li>React.js</li><li>Next.js</li><li>TypeScript</li><li>Tailwind CSS</li></ul>
+          </div>
+          <div class="stack-group">
+            <p class="card__label">Backend</p>
+            <ul class="chips"><li>Node.js</li><li>Express</li><li>Python</li><li>Flask</li><li>Socket.IO</li></ul>
+          </div>
+          <div class="stack-group">
+            <p class="card__label">AI &amp; LLM</p>
+            <ul class="chips"><li>OpenAI</li><li>Groq</li><li>LangChain</li><li>RAG</li><li>Whisper</li></ul>
+          </div>
+          <div class="stack-group">
+            <p class="card__label">Data &amp; Deploy</p>
+            <ul class="chips"><li>PostgreSQL</li><li>MySQL</li><li>Supabase</li><li>Vercel</li><li>Render</li></ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section id="services" class="section container">
+      <div class="section__head reveal">
+        <p class="eyebrow">What I do</p>
+        <h2 class="section__title">How I can <em>help</em> your team.</h2>
+      </div>
+
+      <div class="services">
+        <article class="card service reveal">
+          <div class="service__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 21h8M12 18v3"/></svg>
+          </div>
+          <h3 class="card__title">Full-Stack Web Apps</h3>
+          <p class="card__text">Responsive React and Next.js interfaces backed by clean Node.js, Express and Flask REST APIs, built, tested and deployed end to end.</p>
+        </article>
+        <article class="card service reveal">
+          <div class="service__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M5.6 18.4 7 17M17 7l1.4-1.4"/><circle cx="12" cy="12" r="4"/></svg>
+          </div>
+          <h3 class="card__title">AI &amp; LLM Integration</h3>
+          <p class="card__text">LLM-powered features with OpenAI and Groq: prompt engineering, embeddings, semantic retrieval, RAG pipelines and careful evaluation of model output.</p>
+        </article>
+        <article class="card service reveal">
+          <div class="service__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M2 12h3l3-8 4 16 3-8h7"/></svg>
+          </div>
+          <h3 class="card__title">Real-Time &amp; Voice Systems</h3>
+          <p class="card__text">Live experiences over WebSockets and Socket.IO, plus speech-to-text, text-to-speech and diarization pipelines using Whisper and Pyannote.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section id="work" class="section container">
+      <div class="section__head section__head--row reveal">
+        <div>
+          <p class="eyebrow">Selected work</p>
+          <h2 class="section__title">Projects I'm <em>proud</em> of.</h2>
+        </div>
+        <a href="https://github.com/Saadshakir149" class="link-arrow" target="_blank" rel="noopener">All projects on GitHub <span>↗</span></a>
+      </div>
+
+      <div class="projects">
+        <!-- Project images live in /images. To use a real screenshot instead, just change the img src. -->
+
+        <!-- LLM Moderator -->
+        <article class="card project project--featured reveal">
+          <div class="preview">
+            <img src="images/llm-moderator.svg" alt="AI moderator connected to three discussion participants" loading="lazy" />
+          </div>
+          <div class="project__body">
+            <p class="project__meta mono">2026 · LUMS Research · AI + Real-time</p>
+            <h3 class="project__title">LLM Moderator</h3>
+            <p class="card__text">
+              A collaborative learning platform where students join virtual rooms for AI-moderated story discussions.
+              A GPT-4o-mini moderator guides the conversation and balances turn-taking.
+              It supports <strong>active</strong> and <strong>passive</strong> moderation modes for research
+              into group discussions, uses voice input and output, and gives each participant personal feedback.
+            </p>
+            <ul class="chips chips--sm"><li>React</li><li>Flask</li><li>Socket.IO</li><li>OpenAI</li><li>LangChain</li><li>STT / TTS</li></ul>
+            <div class="project__links">
+              <a href="https://llm-moderator-beta.vercel.app" class="link-arrow" target="_blank" rel="noopener">Live demo <span>↗</span></a>
+              <a href="https://github.com/Saadshakir149/LLM_MODERATOR-main" class="link-arrow" target="_blank" rel="noopener">Source <span>↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- AI Assistive System -->
+        <article class="card project reveal">
+          <div class="preview">
+            <img src="images/voice-assistant.svg" alt="Voice assistant microphone with waveform and verified action" loading="lazy" />
+          </div>
+          <div class="project__body">
+            <p class="project__meta mono">Voice AI · Desktop Automation</p>
+            <h3 class="project__title">AI Assistive System</h3>
+            <p class="card__text">
+              A voice-controlled desktop assistant that carries out computer tasks from natural-language commands.
+              It checks the system before and after each action to catch silent failures, and was tested
+              against 59 structured voice-command scenarios.
+            </p>
+            <ul class="chips chips--sm"><li>Python</li><li>LLM APIs</li><li>Speech-to-Text</li><li>UI Automation</li></ul>
+          </div>
+        </article>
+
+        <!-- RAG Document Intelligence -->
+        <article class="card project reveal">
+          <div class="preview">
+            <img src="images/rag.svg" alt="RAG pipeline: documents to embeddings to LLM to answer" loading="lazy" />
+          </div>
+          <div class="project__body">
+            <p class="project__meta mono">AI · Retrieval-Augmented Generation</p>
+            <h3 class="project__title">RAG Document Intelligence</h3>
+            <p class="card__text">
+              A document question-answering pipeline that extracts and chunks text, embeds it, retrieves it
+              semantically and generates answers with an LLM. Responses were evaluated for relevance,
+              retrieval accuracy and answers the documents don't support.
+            </p>
+            <ul class="chips chips--sm"><li>Python</li><li>Embeddings</li><li>Vector DB</li><li>LLM APIs</li></ul>
+          </div>
+        </article>
+
+        <!-- Mental Health Screening -->
+        <article class="card project reveal">
+          <div class="preview">
+            <img src="images/mental-health.svg" alt="Neural network brain with pulse line and bilingual screening survey" loading="lazy" />
+          </div>
+          <div class="project__body">
+            <p class="project__meta mono">2026 · Health-tech · Full-stack</p>
+            <h3 class="project__title">Mental Health Screening</h3>
+            <p class="card__text">
+              A bilingual (Urdu/English), mobile-first screening survey for university students, with about 126
+              questions including PHQ-9 and GAD-7. Its admin dashboard includes an attrition funnel, search,
+              a safety view and CSV export.
+            </p>
+            <ul class="chips chips--sm"><li>Next.js 14</li><li>TypeScript</li><li>Supabase</li><li>Zustand</li><li>Tailwind</li></ul>
+            <div class="project__links">
+              <a href="https://github.com/Saadshakir149/mental-health-screening" class="link-arrow" target="_blank" rel="noopener">Source <span>↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- AI Evaluator -->
+        <article class="card project reveal">
+          <div class="preview">
+            <img src="images/ai-evaluator.svg" alt="Document OCR scan feeding an AI score gauge" loading="lazy" />
+          </div>
+          <div class="project__body">
+            <p class="project__meta mono">2026 · AI Evaluation · OCR</p>
+            <h3 class="project__title">ASH Awards AI Evaluator</h3>
+            <p class="card__text">
+              An AI evaluation system that extracts text from PDFs, including scanned Urdu documents via Tesseract
+              OCR. It scores submissions with RAG-style prompts on Groq-hosted LLMs, then stores and exports the results.
+            </p>
+            <ul class="chips chips--sm"><li>Python</li><li>Groq</li><li>Tesseract OCR</li><li>RAG</li></ul>
+            <div class="project__links">
+              <a href="https://github.com/Saadshakir149/ai-evaluator" class="link-arrow" target="_blank" rel="noopener">Source <span>↗</span></a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Smaller projects -->
+      <div class="more reveal">
+        <p class="card__label">More backend work</p>
+        <ul class="more__list">
+          <li>
+            <a href="https://github.com/Saadshakir149/user-auth-rbac-api" target="_blank" rel="noopener" class="more__row">
+              <span class="more__title">User Auth &amp; RBAC API</span>
+              <span class="more__desc">Authentication and role-based access control</span>
+              <span class="more__tech mono">Node.js · Express</span>
+              <span class="arrow">↗</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Saadshakir149/expense-tracker-api1" target="_blank" rel="noopener" class="more__row">
+              <span class="more__title">Expense Tracker API</span>
+              <span class="more__desc">REST API for tracking personal expenses</span>
+              <span class="more__tech mono">Node.js · Express</span>
+              <span class="arrow">↗</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Saadshakir149/task-manager-backend" target="_blank" rel="noopener" class="more__row">
+              <span class="more__title">Task Manager API</span>
+              <span class="more__desc">Task management backend, deployed on Vercel</span>
+              <span class="more__tech mono">Node.js · Express</span>
+              <span class="arrow">↗</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="section container">
+      <div class="section__head reveal">
+        <p class="eyebrow">Experience</p>
+        <h2 class="section__title">Where I've <em>worked</em>.</h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="timeline__item reveal">
+          <p class="timeline__date mono">Dec 2025 — Aug 2026</p>
+          <div class="timeline__content">
+            <div class="timeline__head">
+              <h3 class="card__title">Research Assistant · Data Science / AI</h3>
+              <span class="timeline__company">LUMS</span>
+            </div>
+            <p class="timeline__org">Lahore University of Management Sciences</p>
+            <ul class="timeline__points">
+              <li>Built LLM-powered applications and AI-assisted systems with Python, React.js, Flask and LLM APIs.</li>
+              <li>Developed and evaluated real-time AI interaction workflows: speech-to-text → LLM → text-to-speech.</li>
+              <li>Built local speech-processing pipelines with Faster-Whisper and Pyannote for transcription and speaker diarization.</li>
+              <li>Applied prompt engineering and retrieval-based approaches, evaluated model outputs, and documented architecture and experiments.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <p class="timeline__date mono">May 2025 — Nov 2025</p>
+          <div class="timeline__content">
+            <div class="timeline__head">
+              <h3 class="card__title">Node.js Developer</h3>
+              <span class="timeline__company">SharkStack</span>
+            </div>
+            <ul class="timeline__points">
+              <li>Developed and maintained backend services and REST APIs in Node.js for user-facing web applications.</li>
+              <li>Integrated React.js frontends with backend APIs, handling validation, async flows and error handling.</li>
+              <li>Reproduced and traced bugs across API requests and browser behavior; tested workflows with Postman and DevTools.</li>
+              <li>Collaborated through Git and GitHub within established codebases and development patterns.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <p class="timeline__date mono">Internship</p>
+          <div class="timeline__content">
+            <div class="timeline__head">
+              <h3 class="card__title">IT Support Intern</h3>
+              <span class="timeline__company">Volka Food International</span>
+            </div>
+            <ul class="timeline__points">
+              <li>Troubleshot software, hardware, network and connectivity issues for staff in day-to-day operations.</li>
+              <li>Installed and configured systems, ran routine checks, and documented issues and resolutions.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <p class="timeline__date mono">2023 — 2026</p>
+          <div class="timeline__content">
+            <div class="timeline__head">
+              <h3 class="card__title">BS Computer Science</h3>
+              <span class="timeline__company">MUST</span>
+            </div>
+            <p class="timeline__org">Multan University of Science and Technology · CGPA 3.46 / 4.0</p>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <p class="timeline__date mono">Certifications</p>
+          <div class="timeline__content">
+            <ul class="certs">
+              <li><span>Data Science Specialization</span><span class="muted">LUMS</span></li>
+              <li><span>Associate AI Engineer for Developers</span><span class="muted">DataCamp</span></li>
+              <li><span>Machine Learning</span><span class="muted">DataCamp</span></li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ CONTACT CTA ============ -->
+    <section id="contact" class="container">
+      <div class="cta reveal">
+        <div class="cta__glow" aria-hidden="true"></div>
+        <p class="eyebrow eyebrow--light">Contact</p>
+        <h2 class="cta__title">Have a role or project in mind?<br /><em>Let's build it together.</em></h2>
+        <p class="cta__text">I'm open to full-stack and AI engineering roles, remote or on-site, with working-hour overlap for EU and US-East teams.</p>
+        <div class="cta__actions">
+          <a href="mailto:saadhshakir2300@gmail.com" class="btn btn--white">saadhshakir2300@gmail.com</a>
+          <button class="btn btn--outline" data-copy="saadhshakir2300@gmail.com">
+            <span class="copy-label">Copy email</span>
+          </button>
+        </div>
+        <ul class="cta__socials">
+          <li><a href="https://github.com/Saadshakir149" target="_blank" rel="noopener">GitHub ↗</a></li>
+          <li><a href="https://www.linkedin.com/in/saad-shakir-876b78338" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+          <li><a href="Saad_Shakir_CV.pdf" target="_blank" rel="noopener">Resume ↗</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <div class="footer__brand">
+      <img class="nav__avatar" src="photo.jpg" alt="" />
+      <p>© <span id="year"></span> Saad Shakir. Built from scratch with HTML, CSS &amp; JS.</p>
+    </div>
+    <a href="#top" class="link-arrow">Back to top <span>↑</span></a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

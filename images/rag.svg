@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#05111d"/><stop offset="1" stop-color="#0b2440"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#fff" stroke-opacity=".05"/>
+    </pattern>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#0ea5e9" stop-opacity=".45"/><stop offset="1" stop-color="#0ea5e9" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7dd3fc"/><stop offset="1" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+  <circle cx="500" cy="234" r="240" fill="url(#glow)"/>
+
+  <!-- query -->
+  <rect x="370" y="56" width="260" height="40" rx="20" fill="#fff" fill-opacity=".07" stroke="#fff" stroke-opacity=".15"/>
+  <text x="500" y="81" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="14" fill="#bae6fd">What does the report conclude?</text>
+  <path d="M500 98 V180" stroke="#7dd3fc" stroke-opacity=".5" stroke-width="2" stroke-dasharray="4 6"/>
+
+  <!-- documents -->
+  <rect x="70" y="140" width="110" height="140" rx="10" fill="#fff" fill-opacity=".04" stroke="#fff" stroke-opacity=".1"/>
+  <rect x="82" y="152" width="110" height="140" rx="10" fill="#fff" fill-opacity=".05" stroke="#fff" stroke-opacity=".12"/>
+  <rect x="94" y="164" width="110" height="140" rx="10" fill="#0f2a47" stroke="#38bdf8" stroke-opacity=".55"/>
+  <g fill="#7dd3fc" fill-opacity=".4">
+    <rect x="110" y="186" width="78" height="6" rx="3"/>
+    <rect x="110" y="214" width="78" height="6" rx="3"/>
+    <rect x="110" y="228" width="50" height="6" rx="3"/>
+    <rect x="110" y="256" width="40" height="6" rx="3"/>
+    <rect x="110" y="270" width="64" height="6" rx="3"/>
+  </g>
+  <rect x="110" y="200" width="60" height="6" rx="3" fill="#38bdf8"/>
+  <rect x="110" y="242" width="70" height="6" rx="3" fill="#38bdf8"/>
+
+  <!-- arrows -->
+  <g stroke="#7dd3fc" stroke-opacity=".6" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M218 234 H258 M250 226 l8 8 l-8 8"/>
+    <path d="M408 234 H440 M432 226 l8 8 l-8 8"/>
+    <path d="M562 234 H598 M590 226 l8 8 l-8 8"/>
+  </g>
+
+  <!-- embeddings -->
+  <rect x="272" y="172" width="124" height="124" rx="14" fill="#fff" fill-opacity=".04" stroke="#fff" stroke-opacity=".12"/>
+  <g fill="#38bdf8">
+    <circle cx="290" cy="190" r="4" opacity=".9"/><circle cx="312" cy="190" r="4" opacity=".3"/><circle cx="334" cy="190" r="4" opacity=".6"/><circle cx="356" cy="190" r="4" opacity=".2"/><circle cx="378" cy="190" r="4" opacity=".8"/>
+    <circle cx="290" cy="212" r="4" opacity=".4"/><circle cx="312" cy="212" r="4" opacity=".9"/><circle cx="334" cy="212" r="4" opacity=".2"/><circle cx="356" cy="212" r="4" opacity=".7"/><circle cx="378" cy="212" r="4" opacity=".3"/>
+    <circle cx="290" cy="234" r="4" opacity=".7"/><circle cx="312" cy="234" r="4" opacity=".2"/><circle cx="334" cy="234" r="4" opacity="1"/><circle cx="356" cy="234" r="4" opacity=".4"/><circle cx="378" cy="234" r="4" opacity=".6"/>
+    <circle cx="290" cy="256" r="4" opacity=".2"/><circle cx="312" cy="256" r="4" opacity=".6"/><circle cx="334" cy="256" r="4" opacity=".3"/><circle cx="356" cy="256" r="4" opacity=".9"/><circle cx="378" cy="256" r="4" opacity=".2"/>
+    <circle cx="290" cy="278" r="4" opacity=".5"/><circle cx="312" cy="278" r="4" opacity=".3"/><circle cx="334" cy="278" r="4" opacity=".8"/><circle cx="356" cy="278" r="4" opacity=".2"/><circle cx="378" cy="278" r="4" opacity=".5"/>
+  </g>
+
+  <!-- LLM chip -->
+  <g stroke="#7dd3fc" stroke-opacity=".6" stroke-width="3" stroke-linecap="round">
+    <path d="M446 212 H458 M446 234 H458 M446 256 H458"/>
+    <path d="M542 212 H554 M542 234 H554 M542 256 H554"/>
+    <path d="M478 180 V192 M500 180 V192 M522 180 V192"/>
+    <path d="M478 276 V288 M500 276 V288 M522 276 V288"/>
+  </g>
+  <rect x="458" y="192" width="84" height="84" rx="20" fill="url(#chip)"/>
+  <path d="M500 210 C503 228 508 231 524 234 C508 237 503 240 500 258 C497 240 492 237 476 234 C492 231 497 228 500 210Z" fill="#fff"/>
+
+  <!-- answer -->
+  <rect x="610" y="180" width="152" height="108" rx="16" fill="#fff" fill-opacity=".08" stroke="#38bdf8" stroke-opacity=".45"/>
+  <g fill="#e0f2fe">
+    <rect x="626" y="200" width="110" height="6" rx="3" fill-opacity=".7"/>
+    <rect x="626" y="214" width="90" height="6" rx="3" fill-opacity=".5"/>
+    <rect x="626" y="228" width="118" height="6" rx="3" fill-opacity=".5"/>
+    <rect x="626" y="242" width="70" height="6" rx="3" fill-opacity=".5"/>
+  </g>
+  <rect x="626" y="260" width="58" height="16" rx="8" fill="#38bdf8" fill-opacity=".3"/>
+  <rect x="690" y="260" width="44" height="16" rx="8" fill="#38bdf8" fill-opacity=".3"/>
+
+  <g font-family="ui-monospace, Consolas, monospace" font-size="12" letter-spacing="2" fill="#fff" fill-opacity=".5" text-anchor="middle">
+    <text x="149" y="340">DOCUMENTS</text>
+    <text x="334" y="340">EMBEDDINGS</text>
+    <text x="500" y="340">LLM</text>
+    <text x="686" y="340">ANSWER</text>
+  </g>
+  <text x="400" y="448" text-anchor="middle" font-family="ui-monospace, Consolas, monospace" font-size="12" letter-spacing="1.5" fill="#7dd3fc" fill-opacity=".55">chunk → embed → retrieve → generate</text>
+</svg>

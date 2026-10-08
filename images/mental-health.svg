@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#04130f"/><stop offset="1" stop-color="#0a2a24"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#fff" stroke-opacity=".05"/>
+    </pattern>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#14b8a6" stop-opacity=".45"/><stop offset="1" stop-color="#14b8a6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+  <circle cx="265" cy="230" r="220" fill="url(#glow)"/>
+
+  <!-- neural "brain" -->
+  <ellipse cx="268" cy="230" rx="118" ry="100" fill="none" stroke="#5eead4" stroke-opacity=".15" stroke-dasharray="3 7"/>
+  <g stroke="#5eead4" stroke-opacity=".35" stroke-width="1.5" fill="none">
+    <path d="M190 200 L230 160 L285 150 L335 175 L355 230 L330 285 L275 310 L215 290 L180 245 Z" fill="#2dd4bf" fill-opacity=".07"/>
+    <path d="M230 160 L260 215 L285 150 M335 175 L300 250 L355 230 M330 285 L300 250 L275 310 M215 290 L240 255 L180 245 M190 200 L260 215 L240 255 L300 250 L260 215"/>
+  </g>
+  <g fill="#2dd4bf">
+    <circle cx="190" cy="200" r="6"/><circle cx="230" cy="160" r="6"/><circle cx="285" cy="150" r="6"/>
+    <circle cx="335" cy="175" r="6"/><circle cx="355" cy="230" r="6"/><circle cx="330" cy="285" r="6"/>
+    <circle cx="275" cy="310" r="6"/><circle cx="215" cy="290" r="6"/><circle cx="180" cy="245" r="6"/>
+  </g>
+  <g fill="#99f6e4">
+    <circle cx="260" cy="215" r="14" fill-opacity=".18"/><circle cx="260" cy="215" r="8"/>
+    <circle cx="300" cy="250" r="14" fill-opacity=".18"/><circle cx="300" cy="250" r="8"/>
+    <circle cx="240" cy="255" r="8"/>
+  </g>
+
+  <!-- pulse -->
+  <path d="M50 390 H170 L190 360 L210 420 L230 340 L250 405 L265 390 H460" fill="none" stroke="#2dd4bf" stroke-opacity=".25" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M50 390 H170 L190 360 L210 420 L230 340 L250 405 L265 390 H460" fill="none" stroke="#5eead4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- survey card -->
+  <rect x="500" y="80" width="240" height="310" rx="18" fill="#fff" fill-opacity=".06" stroke="#fff" stroke-opacity=".14"/>
+  <text x="524" y="116" font-family="ui-monospace, Consolas, monospace" font-size="12" letter-spacing="1.5" fill="#5eead4">PHQ-9 · GAD-7</text>
+  <rect x="524" y="130" width="192" height="6" rx="3" fill="#fff" fill-opacity=".1"/>
+  <rect x="524" y="130" width="120" height="6" rx="3" fill="#2dd4bf"/>
+  <rect x="524" y="158" width="170" height="8" rx="4" fill="#fff" fill-opacity=".55"/>
+  <rect x="524" y="174" width="120" height="8" rx="4" fill="#fff" fill-opacity=".3"/>
+
+  <g>
+    <rect x="524" y="204" width="192" height="30" rx="8" fill="#fff" fill-opacity=".04" stroke="#fff" stroke-opacity=".1"/>
+    <circle cx="542" cy="219" r="6" fill="none" stroke="#fff" stroke-opacity=".4" stroke-width="2"/>
+    <rect x="558" y="216" width="110" height="6" rx="3" fill="#fff" fill-opacity=".35"/>
+
+    <rect x="524" y="242" width="192" height="30" rx="8" fill="#2dd4bf" fill-opacity=".15" stroke="#2dd4bf" stroke-opacity=".6"/>
+    <circle cx="542" cy="257" r="6" fill="none" stroke="#2dd4bf" stroke-width="2"/>
+    <circle cx="542" cy="257" r="3" fill="#2dd4bf"/>
+    <rect x="558" y="254" width="90" height="6" rx="3" fill="#ccfbf1" fill-opacity=".7"/>
+
+    <rect x="524" y="280" width="192" height="30" rx="8" fill="#fff" fill-opacity=".04" stroke="#fff" stroke-opacity=".1"/>
+    <circle cx="542" cy="295" r="6" fill="none" stroke="#fff" stroke-opacity=".4" stroke-width="2"/>
+    <rect x="558" y="292" width="130" height="6" rx="3" fill="#fff" fill-opacity=".35"/>
+
+    <rect x="524" y="318" width="192" height="30" rx="8" fill="#fff" fill-opacity=".04" stroke="#fff" stroke-opacity=".1"/>
+    <circle cx="542" cy="333" r="6" fill="none" stroke="#fff" stroke-opacity=".4" stroke-width="2"/>
+    <rect x="558" y="330" width="70" height="6" rx="3" fill="#fff" fill-opacity=".35"/>
+  </g>
+
+  <rect x="500" y="414" width="168" height="34" rx="17" fill="#fff" fill-opacity=".06" stroke="#fff" stroke-opacity=".15"/>
+  <text x="584" y="436" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="14" fill="#ccfbf1">اردو · English</text>
+</svg>
